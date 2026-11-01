@@ -1,0 +1,14 @@
+import java.applet.Applet;
+import java.awt.*;
+
+public class MyApplet extends Applet {
+    public void paint(Graphics g) {
+        g.setColor(Color.RED);
+        g.drawRect(50, 50, 150, 80);
+        g.setColor(Color.BLUE);
+        g.drawOval(230, 50, 150, 80);
+        g.setColor(Color.BLACK);
+        g.setFont(new Font("Arial", Font.BOLD, 20));
+        g.drawString("Java Applets are fun!", 50, 180);
+    }
+}
